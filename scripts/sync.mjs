@@ -7,9 +7,10 @@ import path from 'node:path';
 import { execSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 
-const NC = (process.env.NC_URL || '').replace(/\/$/, '');
-const USER = process.env.NC_USER || '';
-const PW = process.env.NC_APP_PASSWORD || '';
+const normUrl = (u) => { u = (u || '').trim().replace(/\s+/g, ''); if (!u) return ''; if (!/^https?:\/\//i.test(u)) u = 'https://' + u; return u.replace(/\/+$/, ''); };
+const NC = normUrl(process.env.NC_URL);
+const USER = (process.env.NC_USER || '').trim();
+const PW = (process.env.NC_APP_PASSWORD || '').trim();
 const ROOT = process.env.NC_ROOT || '/Projets/Bilan annuel 2025-2026';
 const FALLBACK_DIR = 'Dépôts du formulaire';
 if (!NC || !USER || !PW) { console.error('Secrets NC_URL / NC_USER / NC_APP_PASSWORD manquants.'); process.exit(1); }
