@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-31T20:43:39.197Z",
+ "generatedAt": "2026-10-31T21:45:24.487Z",
  "root": "/Projets/Bilan annuel 2025-2026",
  "folders": [
   {
@@ -278,7 +278,7 @@
     "52"
    ],
    "count": 4,
-   "mtime": "2026-10-31T20:37:01.000Z",
+   "mtime": "2026-10-31T21:37:02.000Z",
    "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FF",
    "h": [
     "44312c97fc42",
@@ -366,8 +366,8 @@
    "lignes": [
     "62"
    ],
-   "count": 14,
-   "mtime": "2026-10-31T07:52:36.000Z",
+   "count": 15,
+   "mtime": "2026-10-31T21:44:45.000Z",
    "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
    "h": [
     "03406f49fa92",
@@ -383,6 +383,7 @@
     "b4deb5e3effb",
     "bb083f0e2b16",
     "bc6157f91bf4",
+    "cdbfe7f57392",
     "e46bf8ce88d6"
    ]
   },
@@ -426,12 +427,60 @@
     "29a5fb4f6f86",
     "68d0bb3e823f"
    ]
+  },
+  {
+   "path": "Pièces ajoutées",
+   "label": "Pièces ajoutées",
+   "lignes": [],
+   "count": 34,
+   "mtime": "2026-10-31T21:44:41.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2FPi%C3%A8ces%20ajout%C3%A9es",
+   "h": [
+    "03406f49fa92",
+    "082574b3bf15",
+    "0dec243bbef3",
+    "103ce0923f1e",
+    "1126d1f70d1e",
+    "2be0e2c0b8bd",
+    "38cc70158c87",
+    "3ed72526cd74",
+    "44312c97fc42",
+    "5de7816d1e0b",
+    "62a2fa503b57",
+    "650faa99d4fb",
+    "6f50d8f6aacb",
+    "6fb0c22e74fc",
+    "742969314fea",
+    "74abbf9a1068",
+    "7d911371d1e5",
+    "8058675dedb1",
+    "8f6cd87687a4",
+    "970fd222493a",
+    "9f927b652a39",
+    "a21f29cfd9ed",
+    "a27022693aa7",
+    "a71b6c4f0666",
+    "b2f62818f84b",
+    "b4deb5e3effb",
+    "bb083f0e2b16",
+    "bc6157f91bf4",
+    "c10918ef379d",
+    "ca724e9bdc29",
+    "cdbfe7f57392",
+    "d03853a29bb5",
+    "dc00bf56984a",
+    "e46bf8ce88d6"
+   ]
   }
  ],
  "orphans": [
   {
    "label": "1 - Accès aux soins / D",
    "files": 1
+  },
+  {
+   "label": "Pièces ajoutées",
+   "files": 34
   }
  ]
 }
