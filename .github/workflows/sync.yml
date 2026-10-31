@@ -11,6 +11,7 @@ concurrency:
 
 permissions:
   contents: write
+  pages: write
 
 jobs:
   sync:
@@ -24,7 +25,10 @@ jobs:
       - name: Synchroniser avec Plexus
         run: node scripts/sync.mjs
         env:
-          NC_URL: ${{ secrets.NC_URL }}
           NC_USER: ${{ secrets.NC_USER }}
           NC_APP_PASSWORD: ${{ secrets.NC_APP_PASSWORD }}
           NC_ROOT: /Projets/Bilan annuel 2025-2026
+      - name: Republier le site
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
+        env:
+          GH_TOKEN: ${{ github.token }}
