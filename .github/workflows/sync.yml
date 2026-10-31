@@ -1,0 +1,30 @@
+name: Synchronisation Plexus
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'      # toutes les 15 minutes
+  workflow_dispatch:             # bouton « Synchroniser » du formulaire
+
+concurrency:
+  group: plexus-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Synchroniser avec Plexus
+        run: node scripts/sync.mjs
+        env:
+          NC_URL: ${{ secrets.NC_URL }}
+          NC_USER: ${{ secrets.NC_USER }}
+          NC_APP_PASSWORD: ${{ secrets.NC_APP_PASSWORD }}
+          NC_ROOT: /Projets/Bilan annuel 2025-2026
