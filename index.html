@@ -205,6 +205,7 @@ td.ref{white-space:nowrap;color:var(--ink-2);font-weight:700}
     <span class="saved" id="saved" role="status"><i></i><span>Chargement…</span></span>
     <span class="saved" id="syncst" role="status" title=""><i></i><span>Plexus…</span></span>
     <a class="btn sm" id="btn-sync" href="#" target="_blank" rel="noopener" title="Lancer la synchronisation avec Plexus maintenant">Synchroniser</a>
+    <button class="btn sm" id="btn-edit" type="button" title="Réservé aux personnes autorisées à modifier le suivi" hidden>Mode édition</button>
     <button class="btn sm" id="btn-logout" type="button" title="Se déconnecter du dépôt de données" hidden>Changer de jeton</button>
     <div class="yearpill" aria-label="Période suivie"><span class="on">Année 4 · 15/09/2025 → 14/09/2026</span></div>
   </header>
@@ -279,10 +280,15 @@ td.ref{white-space:nowrap;color:var(--ink-2);font-weight:700}
       <div class="sec" id="s-pieces">
         <h3><span>Pièces justificatives</span><span id="p-count"></span></h3>
         <ul class="plist" id="p-list"></ul>
+        <div class="plx" id="p-plx" style="margin:0 0 10px">
+          <b>Justificatifs : dossier Plexus de cette ligne</b>
+          <span>Les justificatifs sont déposés et consultés dans Plexus (connexion Plexus Santé). Les fichiers ajoutés dans le dossier apparaissent ici après la prochaine synchronisation.</span>
+          <a class="btn pri sm" id="p-plx-a" href="#" target="_blank" rel="noopener" style="margin-top:6px;display:inline-block">Ouvrir le dossier Plexus pour déposer ou consulter</a>
+        </div>
         <div id="p-up">
           <div class="plx">
-            <b>Déposer un fichier : il est versé automatiquement dans Plexus.</b>
-            <span>Le fichier part dans le dépôt de données, puis le robot le range dans le dossier Plexus de cette ligne (quelques minutes). Les fichiers ajoutés directement dans Plexus apparaissent ici tout seuls.</span>
+            <b>Référencer un justificatif déjà déposé dans Plexus.</b>
+            <span>Les fichiers eux-mêmes restent dans Plexus : ne saisissez ici aucun nom de personne.</span>
             <span id="p-dest"></span>
           </div>
           <div class="up2">
@@ -293,7 +299,6 @@ td.ref{white-space:nowrap;color:var(--ink-2);font-weight:700}
             </select>
             <input id="p-label" type="text" placeholder="Libellé (ex. Doctolib SNP, mars 2026)" aria-label="Libellé de la pièce">
           </div>
-          <input id="p-file" type="file" multiple style="margin-top:8px" aria-label="Fichiers à déposer dans Plexus"><div class="hint" style="margin:4px 0">25 Mo maximum par fichier. Ou référencez un fichier déjà dans Plexus :</div>
           <input id="p-link" type="text" placeholder="Lien Plexus (https://…) ou chemin du fichier" aria-label="Lien ou chemin du fichier dans Plexus">
           <div class="actions" style="margin-top:10px"><button class="btn pri sm" id="p-add" type="button">Ajouter la pièce</button><span class="msg" id="p-msg" role="status"></span></div>
         </div>
@@ -349,8 +354,9 @@ td.ref{white-space:nowrap;color:var(--ink-2);font-weight:700}
   function showLogin(msg){
     setSaved('err','Non connecté');
     $('main').innerHTML='<div class="empty" style="max-width:600px;margin:36px auto;text-align:left"><h3 style="margin:0 0 8px">Connexion au dépôt de données</h3>'
-      +'<p style="margin:0 0 10px">Les données de suivi sont dans un dépôt GitHub privé. Collez ici votre jeton d’accès personnel (fine-grained token, accès <b>Contents : lecture et écriture</b> limité au dépôt <code>'+esc(CFG.dataRepo)+'</code>). Il reste dans ce navigateur uniquement.</p>'
-      +'<input id="tk" type="password" autocomplete="off" placeholder="github_pat_…" style="width:100%;padding:10px;border:1px solid var(--line,#ccc);border-radius:8px"><div class="actions" style="margin-top:10px"><button class="btn pri" id="tk-ok" type="button">Se connecter</button><span class="msg" id="tk-msg" role="status">'+esc(msg||'')+'</span></div></div>';
+      +'<p style="margin:0 0 10px">La consultation est ouverte à tous. Pour modifier le suivi, collez votre jeton d’accès personnel GitHub (fine-grained token, accès <b>Contents : lecture et écriture</b> limité au dépôt <code>'+esc(CFG.dataRepo)+'</code>). Il reste dans ce navigateur uniquement. Cette page est publique : ne saisissez aucun nom de personne.</p>'
+      +'<input id="tk" type="password" autocomplete="off" placeholder="github_pat_…" style="width:100%;padding:10px;border:1px solid var(--line,#ccc);border-radius:8px"><div class="actions" style="margin-top:10px"><button class="btn pri" id="tk-ok" type="button">Se connecter</button><button class="btn sm" id="tk-no" type="button" style="margin-left:8px">Retour à la consultation</button><span class="msg" id="tk-msg" role="status">'+esc(msg||'')+'</span></div></div>';
+    $('tk-no').addEventListener('click',function(){location.reload()});
     $('tk-ok').addEventListener('click',async function(){
       var t=$('tk').value.trim();if(!t)return;$('tk-msg').className='msg';$('tk-msg').textContent='Vérification…';
       try{
@@ -362,17 +368,21 @@ td.ref{white-space:nowrap;color:var(--ink-2);font-weight:700}
     });
   }
   if(!CFG.dataRepo||/OWNER/.test(CFG.dataRepo)){setSaved('err','À configurer');$('main').innerHTML='<div class="empty">Éditez <code>config.js</code> : indiquez le dépôt de données (propriétaire/pilotage-cpts-data).</div>';return}
-  if(!TOK){showLogin();return}
-  $('btn-logout').hidden=false;$('btn-logout').addEventListener('click',function(){try{localStorage.removeItem('pilotage_gh_token')}catch(e){}location.reload()});
-  var GHH={'Authorization':'Bearer '+TOK,'Accept':'application/vnd.github+json'};
-  try{
+  var PUBLIC=!TOK;
+  $('btn-edit').hidden=!PUBLIC;$('btn-edit').addEventListener('click',function(){showLogin()});
+  $('btn-logout').hidden=PUBLIC;$('btn-logout').addEventListener('click',function(){try{localStorage.removeItem('pilotage_gh_token')}catch(e){}location.reload()});
+  var GHH=PUBLIC?{}:{'Authorization':'Bearer '+TOK,'Accept':'application/vnd.github+json'};
+  if(PUBLIC)canWrite=false;
+  if(!PUBLIC)try{
     var ru0=await fetch('https://api.github.com/user',{headers:GHH});if(!ru0.ok)throw 1;GHU=(await ru0.json()).login;uid=GHU;
     var rr0=await fetch('https://api.github.com/repos/'+CFG.dataRepo,{headers:GHH});if(!rr0.ok)throw 2;var pj=await rr0.json();canWrite=!!(pj.permissions&&(pj.permissions.push||pj.permissions.admin));
   }catch(e){try{localStorage.removeItem('pilotage_gh_token')}catch(x){}showLogin('Jeton invalide ou expiré : reconnectez-vous.');return}
   var GHAPI='https://api.github.com/repos/'+CFG.dataRepo+'/contents/';
   function b64d(s){var bin=atob(s.replace(/\s/g,'')),u=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return new TextDecoder().decode(u)}
   function b64e(s){var u=new TextEncoder().encode(s),b='';for(var i=0;i<u.length;i+=8192)b+=String.fromCharCode.apply(null,u.subarray(i,i+8192));return btoa(b)}
-  async function ghRead(file){var r=await fetch(GHAPI+'data/'+file+'.json?ref='+encodeURIComponent(CFG.branch)+'&t='+Date.now(),{headers:GHH,cache:'no-store'});if(r.status===404)return {obj:{},sha:null};if(!r.ok){var e=new Error('lecture '+r.status);e.code=r.status;throw e}var j=await r.json();return {obj:JSON.parse(b64d(j.content)),sha:j.sha}}
+  function hsh(t){var h=5381;for(var i=0;i<t.length;i++)h=((h<<5)+h+t.charCodeAt(i))|0;return 'h'+h}
+  async function ghRead(file){if(PUBLIC){var rp=await fetch('data/'+file+'.json?t='+Date.now(),{cache:'no-store'});if(rp.status===404)return {obj:{},sha:null};if(!rp.ok){var ep=new Error('lecture '+rp.status);ep.code=rp.status;throw ep}var tx=await rp.text();return {obj:JSON.parse(tx),sha:hsh(tx)}}
+  var r=await fetch(GHAPI+'data/'+file+'.json?ref='+encodeURIComponent(CFG.branch)+'&t='+Date.now(),{headers:GHH,cache:'no-store'});if(r.status===404)return {obj:{},sha:null};if(!r.ok){var e=new Error('lecture '+r.status);e.code=r.status;throw e}var j=await r.json();return {obj:JSON.parse(b64d(j.content)),sha:j.sha}}
   var FILES={},SHA={},LIS={};
   function snap(name,ord){var o=FILES[name]||{};var docs=Object.keys(o).map(function(k){return {id:k,data:function(){return o[k]}}});if(ord){docs.sort(function(a,b){var x=a.data()[ord.f]||'',y=b.data()[ord.f]||'';return ord.d==='desc'?(x<y?1:x>y?-1:0):(x<y?-1:x>y?1:0)})}return {docs:docs}}
   function emit(name){(LIS[name]||[]).forEach(function(l){try{l.cb(snap(name,l.ord))}catch(e){}})}
@@ -411,14 +421,13 @@ td.ref{white-space:nowrap;color:var(--ink-2);font-weight:700}
   function rebuildPieces(){
     var out=MANUAL.slice();
     if(PIDX&&PIDX.folders){
-      var have={};MANUAL.forEach(function(p){var k=String(p.ligne);(have[k]=have[k]||{})[String(p.nom||'').toLowerCase()]=1});
-      PIDX.folders.forEach(function(fo){(fo.lignes||[]).forEach(function(l){(fo.files||[]).forEach(function(f){
-        if((have[String(l)]||{})[f.name.toLowerCase()])return;
-        out.push({id:'plx:'+fo.path+'/'+f.name+'#'+l,ligne:String(l),nature:'Plexus',libelle:f.name,nom:f.name,lien:f.url,at:f.mtime,auto:true,dossier:fo.label})})})});
-      var nF=0;PIDX.folders.forEach(function(fo){nF+=(fo.files||[]).length});
+      var nF=0;
+      PIDX.folders.forEach(function(fo){var c=fo.count||(fo.files||[]).length;nF+=c;if(!c)return;
+        (fo.lignes||[]).forEach(function(l){
+          out.push({id:'plx:'+fo.path+'#'+l,ligne:String(l),nature:'Plexus',libelle:c+' fichier'+(c>1?'s':'')+' dans le dossier Plexus « '+fo.label+' »',nom:fo.label,lien:fo.url||plxUrl(PLX_ROOT+'/'+fo.path),at:fo.mtime,auto:true,dossier:fo.label})})});
       var orph=(PIDX.orphans||[]);
       var st=$('syncst');st.className='saved'+(orph.length?' err':'');
-      st.lastChild.textContent='Plexus : '+nF+' fichier'+(nF>1?'s':'')+' · '+fmtDate(PIDX.generatedAt)+(orph.length?' · '+orph.length+' dossier'+(orph.length>1?'s':'')+' sans ligne':'');
+      st.lastChild.textContent='Plexus : '+nF+' fichier'+(nF>1?'s':'')+(PIDX.generatedAt?' · '+fmtDate(PIDX.generatedAt):'')+(orph.length?' · '+orph.length+' dossier'+(orph.length>1?'s':'')+' sans ligne':'');
       st.title=orph.length?('Dossiers Plexus contenant des fichiers non rattachés à une ligne : '+orph.map(function(o){return o.label+' ('+o.files+')'}).join(' ; ')):'Tous les fichiers du dossier Plexus sont rattachés à une ligne.';
     }
     PIECES=out;render();
@@ -562,10 +571,11 @@ td.ref{white-space:nowrap;color:var(--ink-2);font-weight:700}
       var np=needsPiece(r),has=nPieces(r.ligne)>0;
       $('s-pieces').hidden=!(np||has);$('i-just').closest('label').hidden=!np;
       $('p-up').hidden=!(np&&canWrite);$('p-ro').hidden=!(np&&!canWrite);
-      if(!np&&has){$('p-ro').hidden=false;$('p-ro').textContent=noPieceWhy(r)+' Les pièces déjà déposées restent consultables.'}else $('p-ro').textContent='L\'ajout de pièces est réservé aux éditeurs de la page.';
+      if(!np&&has){$('p-ro').hidden=false;$('p-ro').textContent=noPieceWhy(r)+' Les pièces déjà déposées restent consultables.'}else $('p-ro').textContent='La référence de pièces est réservée aux éditeurs de la page.';
+      var pf=plxFolder(r);$('p-plx').hidden=!(pf&&(np||has));if(pf)$('p-plx-a').href=plxUrl(pf.path);
       refreshLists();
     }
-    ctlDisable();if(!canWrite){$('i-msg').textContent='Lecture seule : vous pouvez consulter mais pas modifier.'}
+    ctlDisable();if(!canWrite){$('i-msg').textContent='Consultation publique : les modifications sont réservées aux éditeurs.'}
     $('overlay').hidden=false;document.body.style.overflow='hidden';
     if(opts.focus==='pieces'){setTimeout(function(){$('s-pieces').scrollIntoView({block:'start'})},30)}else{$('drawer').querySelector('.dbody').scrollTop=0}
     $('d-close').focus({preventScroll:true});
@@ -624,9 +634,7 @@ td.ref{white-space:nowrap;color:var(--ink-2);font-weight:700}
   /* ---------- pièces ---------- */
   async function addPiece(){
     var m=$('p-msg'),raw=$('p-link').value.trim(),lab=$('p-label').value.trim(),nat=$('p-type').value,l=OPEN;m.className='msg';
-    var fl=$('p-file').files;
-    if(fl&&fl.length){return uploadFiles(fl,lab,nat,l,m)}
-    if(!raw){m.className='msg err';m.textContent='Choisissez un fichier ou collez le lien Plexus.';return}
+    if(!raw){m.className='msg err';m.textContent='Collez le lien Plexus du fichier.';return}
     var doc={ligne:l,nature:nat,libelle:lab,at:new Date().toISOString(),by:uid};
     if(/^[a-z][a-z0-9+.-]*:/i.test(raw)){
       var u;try{u=new URL(raw)}catch(e){u=null}
