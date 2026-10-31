@@ -1,5 +1,434 @@
 {
- "generatedAt": null,
- "folders": [],
- "orphans": []
+ "generatedAt": "2026-10-31T09:12:32.497Z",
+ "root": "/Projets/Bilan annuel 2025-2026",
+ "folders": [
+  {
+   "path": "1 - Accès aux soins/A",
+   "label": "1 - Accès aux soins / A",
+   "lignes": [
+    "22"
+   ],
+   "count": 3,
+   "mtime": "2026-09-11T18:16:11.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F1%20-%20Acc%C3%A8s%20aux%20soins%2FA",
+   "h": [
+    "6e72a1290fb2",
+    "9ca19e813ce8",
+    "d1a9030d4b1c"
+   ]
+  },
+  {
+   "path": "1 - Accès aux soins/B",
+   "label": "1 - Accès aux soins / B",
+   "lignes": [
+    "23"
+   ],
+   "count": 3,
+   "mtime": "2026-09-13T10:06:10.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F1%20-%20Acc%C3%A8s%20aux%20soins%2FB",
+   "h": [
+    "0ed9753fb197",
+    "9b4bbe26a8ab",
+    "d68bb9df0527"
+   ]
+  },
+  {
+   "path": "1 - Accès aux soins/C",
+   "label": "1 - Accès aux soins / C",
+   "lignes": [
+    "24",
+    "25"
+   ],
+   "count": 1,
+   "mtime": "2026-09-13T10:09:10.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F1%20-%20Acc%C3%A8s%20aux%20soins%2FC",
+   "h": [
+    "dc67fc52f8d1"
+   ]
+  },
+  {
+   "path": "1 - Accès aux soins/D",
+   "label": "1 - Accès aux soins / D",
+   "lignes": [],
+   "count": 1,
+   "mtime": "2026-09-13T18:11:34.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F1%20-%20Acc%C3%A8s%20aux%20soins%2FD",
+   "h": [
+    "80794f6f30e2"
+   ]
+  },
+  {
+   "path": "2 - Soins non programmés",
+   "label": "2 - Soins non programmés",
+   "lignes": [
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34"
+   ],
+   "count": 2,
+   "mtime": "2026-09-13T17:00:59.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F2%20-%20Soins%20non%20programm%C3%A9s",
+   "h": [
+    "bcdca640748a",
+    "cafaf9f489ed"
+   ]
+  },
+  {
+   "path": "3 - Parcours de soins/A",
+   "label": "3 - Parcours de soins / A",
+   "lignes": [
+    "36"
+   ],
+   "count": 4,
+   "mtime": "2026-09-13T10:08:09.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FA",
+   "h": [
+    "34d0f9fe950e",
+    "5b72e03b7123",
+    "ad0eba43a17b",
+    "d7ee4b13de6a"
+   ]
+  },
+  {
+   "path": "3 - Parcours de soins/B",
+   "label": "3 - Parcours de soins / B",
+   "lignes": [
+    "37"
+   ],
+   "count": 3,
+   "mtime": "2026-10-30T21:47:42.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FB",
+   "h": [
+    "0853ddfaba29",
+    "09481ef68acf",
+    "5ace7884d988"
+   ]
+  },
+  {
+   "path": "3 - Parcours de soins/C",
+   "label": "3 - Parcours de soins / C",
+   "lignes": [
+    "38"
+   ],
+   "count": 2,
+   "mtime": "2026-10-30T21:36:00.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FC",
+   "h": [
+    "38cc70158c87",
+    "62a2fa503b57"
+   ]
+  },
+  {
+   "path": "3 - Parcours de soins/D",
+   "label": "3 - Parcours de soins / D",
+   "lignes": [
+    "39"
+   ],
+   "count": 3,
+   "mtime": "2026-10-31T07:04:36.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FD",
+   "h": [
+    "2be0e2c0b8bd",
+    "6fb0c22e74fc",
+    "b4deb5e3effb"
+   ]
+  },
+  {
+   "path": "3 - Parcours de soins/E",
+   "label": "3 - Parcours de soins / E",
+   "lignes": [
+    "40"
+   ],
+   "count": 8,
+   "mtime": "2026-10-30T21:47:43.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FE",
+   "h": [
+    "0e34c336f7f1",
+    "1126d1f70d1e",
+    "28f078d5b3d7",
+    "8f6cd87687a4",
+    "a3b17b53be50",
+    "ad2e32748be5",
+    "c10918ef379d",
+    "dc00bf56984a"
+   ]
+  },
+  {
+   "path": "3 - Parcours de soins/F",
+   "label": "3 - Parcours de soins / F",
+   "lignes": [
+    "41"
+   ],
+   "count": 1,
+   "mtime": "2026-09-13T10:14:09.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FF",
+   "h": [
+    "f2d2f0c49d2d"
+   ]
+  },
+  {
+   "path": "3 - Parcours de soins/G",
+   "label": "3 - Parcours de soins / G",
+   "lignes": [
+    "42"
+   ],
+   "count": 3,
+   "mtime": "2026-09-11T19:18:36.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FG",
+   "h": [
+    "3f790f223814",
+    "650faa99d4fb",
+    "742969314fea"
+   ]
+  },
+  {
+   "path": "4 - Prévention/A",
+   "label": "4 - Prévention / A",
+   "lignes": [
+    "44"
+   ],
+   "count": 2,
+   "mtime": "2026-09-13T07:49:36.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FA",
+   "h": [
+    "3609e7f91ccc",
+    "4b6878c266ec"
+   ]
+  },
+  {
+   "path": "4 - Prévention/B",
+   "label": "4 - Prévention / B",
+   "lignes": [
+    "45",
+    "46"
+   ],
+   "count": 7,
+   "mtime": "2026-09-13T10:04:10.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FB",
+   "h": [
+    "2bfa80622999",
+    "6f265d74010e",
+    "970fd222493a",
+    "9baaf8559db5",
+    "a27022693aa7",
+    "dcb961b425d3",
+    "eb18e8f61ddd"
+   ]
+  },
+  {
+   "path": "4 - Prévention/C",
+   "label": "4 - Prévention / C",
+   "lignes": [
+    "47",
+    "48"
+   ],
+   "count": 4,
+   "mtime": "2026-09-10T21:19:06.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FC",
+   "h": [
+    "2bfa80622999",
+    "6f265d74010e",
+    "9baaf8559db5",
+    "eb18e8f61ddd"
+   ]
+  },
+  {
+   "path": "4 - Prévention/D",
+   "label": "4 - Prévention / D",
+   "lignes": [
+    "49",
+    "50"
+   ],
+   "count": 5,
+   "mtime": "2026-10-31T08:17:29.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FD",
+   "h": [
+    "1445ad3884db",
+    "2bfa80622999",
+    "6f265d74010e",
+    "9baaf8559db5",
+    "eb18e8f61ddd"
+   ]
+  },
+  {
+   "path": "4 - Prévention/E",
+   "label": "4 - Prévention / E",
+   "lignes": [
+    "51"
+   ],
+   "count": 3,
+   "mtime": "2026-10-30T21:35:59.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FE",
+   "h": [
+    "3ed72526cd74",
+    "74abbf9a1068",
+    "d03853a29bb5"
+   ]
+  },
+  {
+   "path": "4 - Prévention/F",
+   "label": "4 - Prévention / F",
+   "lignes": [
+    "52"
+   ],
+   "count": 2,
+   "mtime": "2026-10-31T08:43:22.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FF",
+   "h": [
+    "44312c97fc42",
+    "ca724e9bdc29"
+   ]
+  },
+  {
+   "path": "5 - Amélioration de la qualité et de la pertinence des soins/A",
+   "label": "5 - Amélioration de la qualité et de la pertinence des soins / A",
+   "lignes": [
+    "54"
+   ],
+   "count": 4,
+   "mtime": "2026-09-14T14:39:01.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F5%20-%20Am%C3%A9lioration%20de%20la%20qualit%C3%A9%20et%20de%20la%20pertinence%20des%20soins%2FA",
+   "h": [
+    "0a9395463e1d",
+    "5884ae2eca80",
+    "5e457d9d8a58",
+    "eedace38cf4c"
+   ]
+  },
+  {
+   "path": "5 - Amélioration de la qualité et de la pertinence des soins/B",
+   "label": "5 - Amélioration de la qualité et de la pertinence des soins / B",
+   "lignes": [
+    "55"
+   ],
+   "count": 1,
+   "mtime": "2026-09-10T18:46:22.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F5%20-%20Am%C3%A9lioration%20de%20la%20qualit%C3%A9%20et%20de%20la%20pertinence%20des%20soins%2FB",
+   "h": [
+    "bfdba9a1fd16"
+   ]
+  },
+  {
+   "path": "5 - Amélioration de la qualité et de la pertinence des soins/C",
+   "label": "5 - Amélioration de la qualité et de la pertinence des soins / C",
+   "lignes": [
+    "56"
+   ],
+   "count": 4,
+   "mtime": "2026-09-12T20:08:41.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F5%20-%20Am%C3%A9lioration%20de%20la%20qualit%C3%A9%20et%20de%20la%20pertinence%20des%20soins%2FC",
+   "h": [
+    "461e749f6c2f",
+    "ae8df9cbafb7",
+    "bc9df9f1bf9f",
+    "f0af36fc4ba9"
+   ]
+  },
+  {
+   "path": "5 - Amélioration de la qualité et de la pertinence des soins/D",
+   "label": "5 - Amélioration de la qualité et de la pertinence des soins / D",
+   "lignes": [
+    "57"
+   ],
+   "count": 1,
+   "mtime": "2026-09-10T20:43:43.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F5%20-%20Am%C3%A9lioration%20de%20la%20qualit%C3%A9%20et%20de%20la%20pertinence%20des%20soins%2FD",
+   "h": [
+    "4b39e5dadd81"
+   ]
+  },
+  {
+   "path": "5 - Amélioration de la qualité et de la pertinence des soins/E",
+   "label": "5 - Amélioration de la qualité et de la pertinence des soins / E",
+   "lignes": [
+    "58",
+    "59",
+    "60"
+   ],
+   "count": 1,
+   "mtime": "2026-09-10T21:06:12.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F5%20-%20Am%C3%A9lioration%20de%20la%20qualit%C3%A9%20et%20de%20la%20pertinence%20des%20soins%2FE",
+   "h": [
+    "f8b97f3d0989"
+   ]
+  },
+  {
+   "path": "6 - Accompagnement des professionnels de santé/A",
+   "label": "6 - Accompagnement des professionnels de santé / A",
+   "lignes": [
+    "62"
+   ],
+   "count": 14,
+   "mtime": "2026-10-31T07:52:36.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+   "h": [
+    "03406f49fa92",
+    "082574b3bf15",
+    "0dec243bbef3",
+    "103ce0923f1e",
+    "5de7816d1e0b",
+    "6f50d8f6aacb",
+    "9f927b652a39",
+    "9fc8268c25f3",
+    "a71b6c4f0666",
+    "b2f62818f84b",
+    "b4deb5e3effb",
+    "bb083f0e2b16",
+    "bc6157f91bf4",
+    "e46bf8ce88d6"
+   ]
+  },
+  {
+   "path": "6 - Accompagnement des professionnels de santé/B",
+   "label": "6 - Accompagnement des professionnels de santé / B",
+   "lignes": [
+    "63"
+   ],
+   "count": 2,
+   "mtime": "2026-10-28T10:48:00.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FB",
+   "h": [
+    "29a5fb4f6f86",
+    "68d0bb3e823f"
+   ]
+  },
+  {
+   "path": "6 - Accompagnement des professionnels de santé/C",
+   "label": "6 - Accompagnement des professionnels de santé / C",
+   "lignes": [
+    "64"
+   ],
+   "count": 1,
+   "mtime": "2026-09-13T17:00:21.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FC",
+   "h": [
+    "94aa66d4a46a"
+   ]
+  },
+  {
+   "path": "6 - Accompagnement des professionnels de santé/D",
+   "label": "6 - Accompagnement des professionnels de santé / D",
+   "lignes": [
+    "65"
+   ],
+   "count": 2,
+   "mtime": "2026-09-11T20:41:22.000Z",
+   "url": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FD",
+   "h": [
+    "29a5fb4f6f86",
+    "68d0bb3e823f"
+   ]
+  }
+ ],
+ "orphans": [
+  {
+   "label": "1 - Accès aux soins / D",
+   "files": 1
+  }
+ ]
 }
