@@ -1,0 +1,210 @@
+{
+ "fiche_l37": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Fiche action – Parcours autour de la personne âgée (guide interactif, ICOPE)",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FB",
+  "ligne": "37",
+  "nature": "Fiche action",
+  "nom": "Fiche_action_L37_Parcours_personne_agee.docx"
+ },
+ "fiche_l38a": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Fiche action – Promotion de Mon espace santé",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FC",
+  "ligne": "38",
+  "nature": "Fiche action",
+  "nom": "Fiche_action_L38_Mon_espace_sante.docx"
+ },
+ "fiche_l38b": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Fiche action – Applications numériques de la CPTS",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FC",
+  "ligne": "38",
+  "nature": "Fiche action",
+  "nom": "Fiche_action_Applications_numeriques_CPTS.docx"
+ },
+ "fiche_l39": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Fiche action – Sensibilisation des professionnels à la santé mentale (PSSM)",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FD",
+  "ligne": "39",
+  "nature": "Fiche action",
+  "nom": "Fiche_action_L39_Sante_mentale_professionnels.docx"
+ },
+ "fiche_l39_outil": {
+  "at": "2026-10-30T10:00:00.000Z",
+  "libelle": "Fiche action – Outil interactif « Santé mentale : ressources pour vos patients »",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FD",
+  "ligne": "39",
+  "nature": "Fiche action",
+  "nom": "Fiche_action_L39_Outil_interactif_sante_mentale.docx"
+ },
+ "fiche_l40": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Fiche action – Santé mentale adolescents et personnes âgées",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FE",
+  "ligne": "40",
+  "nature": "Fiche action",
+  "nom": "Fiche_action_L40_Sante_mentale_adolescents_et_personnes_agees.docx"
+ },
+ "fiche_l51": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Fiche action – Addictions",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FE",
+  "ligne": "51",
+  "nature": "Fiche action",
+  "nom": "Fiche_action_L51_Addictions.docx"
+ },
+ "fiche_l52": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Fiche action – Vaccination",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FF",
+  "ligne": "52",
+  "nature": "Fiche action",
+  "nom": "Fiche_action_L52_Vaccination.docx"
+ },
+ "fiche_l62": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Fiche action – Formations des professionnels",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Fiche action",
+  "nom": "Fiche_action_L62_Formations_professionnels.docx"
+ },
+ "l39_facture_pssm": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Facture formation PSSM module standard (25 et 26/09/2025, 10 stagiaires)",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F3%20-%20Parcours%20de%20soins%2FD",
+  "ligne": "39",
+  "nature": "Courrier ou mail",
+  "nom": "Facture_Formation_PSSM_module_standard_25-26sept2025.pdf"
+ },
+ "l62_attestations_violences": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Attestations de formation – dépistage des violences (5 attestations du 07/04/2026)",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Autre",
+  "nom": "Attestation_formation_violences_*.pdf"
+ },
+ "l62_brevo_violences": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Communication Brevo aux adhérents – formation dépistage des violences (28/11/2025)",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Courrier ou mail",
+  "nom": "Communication_Brevo_Formation_violences_conjugales_28nov2025.pdf"
+ },
+ "l62_convention_le_barzic": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Convention de perfectionnement en rééducation vestibulaire niveau 3 – kinésithérapeute (13 et 14/11/2026, année 5)",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Autre",
+  "nom": "Convention_perfectionnement_vestibulaire_13-14nov2026.pdf"
+ },
+ "l62_facture_lspaire_f22": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Facture LSpaire F22 – temps d'échange post-formation violences, 24/03/2026",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Courrier ou mail",
+  "nom": "Facture_LSpaire_F22_temps_echange_mars2026.pdf"
+ },
+ "l62_facture_lspaire_f26": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Facture LSpaire F26 – temps d'échange post-formation violences, 24/03/2026",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Courrier ou mail",
+  "nom": "Facture_LSpaire_F26_temps_echange_mars2026.pdf"
+ },
+ "l62_facture_pssm": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Facture formation PSSM module standard (25 et 26/09/2025, 10 stagiaires)",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Courrier ou mail",
+  "nom": "Facture_Formation_PSSM_module_standard_25-26sept2025.pdf"
+ },
+ "l62_facture_vestibulaire": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Facture formation Rééducation vestibulaire niveau 3, Lille (07 et 08/11/2025) – 2 kinésithérapeutes",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Courrier ou mail",
+  "nom": "Facture_Formation_Reeducation_Vestibulaire_niveau3_Lille_7-8nov2025.pdf"
+ },
+ "l62_note_gapp_ortho": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Note d'honoraires n° 2025-107 – GAPP orthophonistes, 17/10/2025",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Courrier ou mail",
+  "nom": "Note_honoraires_GAPP_orthophonistes_17-10-2025.pdf"
+ },
+ "l62_note_supervision_sf": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Note d'honoraires – supervision des sages-femmes, 03/10/2025",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F6%20-%20Accompagnement%20des%20professionnels%20de%20sant%C3%A9%2FA",
+  "ligne": "62",
+  "nature": "Courrier ou mail",
+  "nom": "Facture_Supervision_sages-femmes_03-10-2025.pdf"
+ },
+ "l62_projet_supervision_ortho": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Projet Plexus « Supervision orthophonique » – groupe 1 : séances émargées du 17/10/2025 et du 06/03/2026 (6 orthophonistes)",
+  "lien": "https://cptsartoislys.plexus-sante.fr/projects/41/meetings",
+  "ligne": "62",
+  "nature": "Compte rendu de réunion",
+  "nom": "projects/41/meetings"
+ },
+ "l62_projet_supervision_sf": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Projet Plexus « Supervision sage-femme » – séances émargées du 03/10/2025 et du 30/01/2026 (4 sages-femmes)",
+  "lien": "https://cptsartoislys.plexus-sante.fr/projects/64/meetings",
+  "ligne": "62",
+  "nature": "Compte rendu de réunion",
+  "nom": "projects/64/meetings"
+ },
+ "l62_projet_violences": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "libelle": "Projet Plexus « Formation dépistage des violences sexuelles et conjugales dans le soin » (28/11/2025 et 24/03/2026)",
+  "lien": "https://cptsartoislys.plexus-sante.fr/projects/65/meetings",
+  "ligne": "62",
+  "nature": "Compte rendu de réunion",
+  "nom": "projects/65/meetings"
+ },
+ "plx61_membres": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Projet Plexus « Communauté de secouristes en santé mentale » – 18 membres",
+  "lien": "https://cptsartoislys.plexus-sante.fr/projects/61/overview",
+  "ligne": "39",
+  "nature": "Autre",
+  "nom": "projects/61/overview"
+ },
+ "plx61_reunions": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "libelle": "Projet Plexus « Communauté de secouristes en santé mentale » – 4 réunions (25 et 26/09/2025, 27/03/2026, 19/06/2026)",
+  "lien": "https://cptsartoislys.plexus-sante.fr/projects/61/meetings",
+  "ligne": "39",
+  "nature": "Compte rendu de réunion",
+  "nom": "projects/61/meetings"
+ },
+ "site_l39_outil": {
+  "at": "2026-10-30T10:00:00.000Z",
+  "libelle": "Outil interactif santé mentale – site internet de la CPTS (Professionnels de santé > Vos outils)",
+  "lien": "https://www.cptsartoislys.fr/professionnels-de-sante/vos-outils/sante-mentale-ressources/",
+  "ligne": "39",
+  "nature": "Autre",
+  "nom": "sante-mentale-ressources"
+ },
+ "l50_fiche_depistage_col_uterus": {
+  "ligne": "50",
+  "nature": "Fiche action",
+  "libelle": "Fiche action « Promotion des dépistages organisés, dont le dépistage du cancer du col de l'utérus » : 4 actions en maisons de santé, vidéos, compte éditeur VPS, communication Brevo",
+  "nom": "Fiche_action_L50_Depistage_col_uterus.docx",
+  "lien": "https://cptsartoislys-cloud.plexus-sante.fr/apps/files/?dir=%2FProjets%2FBilan%20annuel%202025-2026%2F4%20-%20Pr%C3%A9vention%2FD",
+  "at": "2026-10-31T09:00:00.000Z"
+ }
+}

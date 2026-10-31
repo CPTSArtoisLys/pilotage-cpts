@@ -1,0 +1,72 @@
+{
+ "j_l37_1030": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "kind": "suivi",
+  "ligne": "37",
+  "texte": "Mise à jour — statut : Atteint ; fiche action déposée dans Plexus",
+  "by": null
+ },
+ "j_l38_1030": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "kind": "suivi",
+  "ligne": "38",
+  "texte": "Mise à jour — statut : Atteint ; fiche action déposée dans Plexus",
+  "by": null
+ },
+ "j_l39_1030": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "kind": "suivi",
+  "ligne": "39",
+  "texte": "Mise à jour — statut : Atteint ; fiche action déposée dans Plexus",
+  "by": null
+ },
+ "j_l39_outil": {
+  "at": "2026-10-30T10:00:00.000Z",
+  "kind": "piece",
+  "ligne": "39",
+  "texte": "Fiche action « Outil interactif santé mentale » déposée dans Plexus (3-D) et référencée dans le tableau de suivi",
+  "by": null
+ },
+ "j_l40_1030": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "kind": "suivi",
+  "ligne": "40",
+  "texte": "Mise à jour — statut : Atteint ; fiche action déposée dans Plexus",
+  "by": null
+ },
+ "j_l51_1030": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "kind": "suivi",
+  "ligne": "51",
+  "texte": "Mise à jour — statut : En bonne voie ; fiche action déposée dans Plexus",
+  "by": null
+ },
+ "j_l52_1030": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "kind": "suivi",
+  "ligne": "52",
+  "texte": "Mise à jour — statut : En bonne voie ; fiche action déposée dans Plexus",
+  "by": null
+ },
+ "j_l62_1030": {
+  "at": "2026-10-30T09:00:00.000Z",
+  "kind": "suivi",
+  "ligne": "62",
+  "texte": "Mise à jour — statut : Atteint ; fiche action déposée dans Plexus",
+  "by": null
+ },
+ "j_l62_1031": {
+  "at": "2026-10-31T09:00:00.000Z",
+  "kind": "piece",
+  "ligne": "62",
+  "texte": "Tableau des formations (thèmes, dates, personnes formées) intégré à la fiche action ; facture PSSM et attestations déposées dans Plexus (6-A)",
+  "by": null
+ },
+ "j_l50_1031": {
+  "ligne": "50",
+  "kind": "piece",
+  "texte": "Fiche action dépistage du col de l'utérus déposée dans Plexus (4-D) : actions de Fleurbaix (07/09/2026) et Laventie (14/09/2026), vidéos LinkedIn/Facebook/Instagram, compte éditeur VPS, communication Brevo",
+  "at": "2026-10-31T09:00:00.000Z",
+  "by": null
+ }
+}
