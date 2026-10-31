@@ -1,14 +1,15 @@
 // Synchronisation Plexus -> formulaire de pilotage (dépôt public).
 // Le robot lit le dossier Plexus et écrit data/plexus-index.json : nombre de fichiers par dossier et lien vers le dossier,
 // SANS nom de fichier ni nom de personne. Les justificatifs eux-mêmes ne quittent jamais Plexus.
-// Aucun mot de passe n'est stocké dans le code : NC_URL, NC_USER et NC_APP_PASSWORD viennent des secrets GitHub.
+// Aucun mot de passe n'est stocké dans le code : NC_USER et NC_APP_PASSWORD viennent des secrets GitHub.
 import fs from 'node:fs';
 import path from 'node:path';
 import { execSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 
 const normUrl = (u) => { u = (u || '').trim().replace(/\s+/g, ''); if (!u) return ''; if (!/^https?:\/\//i.test(u)) u = 'https://' + u; return u.replace(/\/+$/, ''); };
-const NC = normUrl(process.env.NC_URL);
+// L'adresse de Plexus Cloud n'est pas confidentielle : elle est fixée ici (le secret NC_URL n'est plus utilisé).
+const NC = normUrl('https://cptsartoislys-cloud.plexus-sante.fr');
 const USER = (process.env.NC_USER || '').trim();
 const PW = (process.env.NC_APP_PASSWORD || '').trim();
 const ROOT = process.env.NC_ROOT || '/Projets/Bilan annuel 2025-2026';
