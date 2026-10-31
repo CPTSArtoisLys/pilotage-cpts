@@ -74,5 +74,12 @@
   "kind": "piece",
   "texte": "Communication aux professionnels de santé du 01/09/2026 (vaccination hiver 2026-2027) déposée dans Plexus (4-F) ; fiche action et tableau mis à jour",
   "at": "2026-10-31T09:00:00.000Z"
+ },
+ "j_new_6a94c26fc75f": {
+  "ligne": "51",
+  "kind": "piece",
+  "texte": "1 nouveau fichier détecté dans le dossier Plexus (4 - Prévention / E)",
+  "at": "2026-10-31T19:43:34.366Z",
+  "by": "synchro-plexus"
  }
 }
